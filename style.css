@@ -1,0 +1,210 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{ 
+    background: #e3e9f7;
+    width:100%;
+    height: 100vh;
+}
+img{ 
+    width: 90px;
+}
+header{ 
+    width: 100%;
+    height: 100px;
+    background: #fefefe;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto;
+    position: fixed;
+    top:0%;
+    z-index: 100;
+    
+    
+}
+.logo{ 
+    width: 120px;
+    margin: 8px 8px;
+}
+nav .logo{ 
+    display: none;
+}
+nav ul{ 
+    display: flex;
+}
+nav ul li a{ 
+    color: #212526;
+    display: block;
+    margin: 0 2px;
+    font-weight: 600;
+    padding:8px 18px;
+    transition: 0.2s;
+    border-radius: 30px;
+}
+nav ul li a:hover{ 
+    background: #c9d4e9;
+}
+nav ul li a.active{ 
+    background:#675cff;
+    color: #fff;
+}
+.hamburger{ 
+    display: none;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.hamburger:hover{ 
+    background:#f6f4ff;
+}
+.hamburger div{ 
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #212526;
+} 
+@media only screen and (max-width: 1100px){ 
+    header{ 
+        padding: 0 20px;
+        
+    }
+    nav { 
+        position: absolute;
+        left: -300px;
+        top: 0;
+        z-index: 999;
+        width: 280px;
+        height: 100vh;
+        background-color:#fefefe;
+        transition: 0.2s;
+        box-shadow: -2px 0 20px 0 rgba(0, 0, 0, 0.05);
+        right: -300px;
+    }
+
+    
+    #nav_check:checked ~ nav{ 
+        left: 0;
+    }
+    nav .logo{
+        display: block;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
+    nav ul li a{
+        margin-bottom: 5px;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+    nav ul{ 
+        display: block;
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+    nav ul li:hover ul.dropdown {
+        right: -150px; /* Slide in from the right */
+        top: 120px;
+    }
+    .hamburger{
+        display: block;
+    }
+}.shadow{ 
+    position: relative;
+    box-shadow: rgba(157, 157, 157, 0.2) 0px 4px 10px;
+}
+
+.main1{
+    height: 100vh;
+    
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content1{
+    text-align: center;
+}
+.main2{
+    height: 100vh;
+   
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content2{
+    text-align: center;
+    
+}
+.main3{
+    height: 50vh;
+    background: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.content3{
+    text-align: center;
+   
+    
+}
+.content1 h1{ 
+    color: white;
+}
+/* Add this CSS to style the dropdown */
+nav ul li ul.dropdown {
+    display: none;
+    position: absolute;
+    background: #fefefe; /* Dropdown background color */
+    border-radius: 0 0 10px 10px;
+}
+
+nav ul li:hover ul.dropdown {
+    display: block;
+    width: 150px; /* Adjust the width as needed */
+    box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+nav ul li ul.dropdown li {
+    display: block;
+}
+
+nav ul li ul.dropdown li a {
+    color: #212526;
+    display: block;
+    font-weight: 600;
+    padding: 8px 18px;
+    transition: 0.2s;
+    border-radius: 0;
+}
+
+nav ul li ul.dropdown li a:hover {
+    background: #c9d4e9; /* Dropdown item hover background color */
+    border-radius: 10px 10px;
+}
+
+/* Sign in css */
+.main1 { 
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+
+}
+.main2 { 
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+    
+}
